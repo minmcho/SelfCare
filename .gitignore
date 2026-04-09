@@ -1,70 +1,44 @@
 ```
-# Xcode project files
-*.xcodeproj/xcuserdata/
-*.xcodeproj/project.xcworkspace/xcuserdata/
-*.xcuserdatad/
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+*.pbxuser
+*.mode1v3
+*.perspectivev3
+*.xcuserstate
 *.xccheckout
 *.moved-aside
+*.xcscmblueprint
+
+# iOS Build
 build/
 DerivedData/
 
-# iOS build artifacts
-*.app
-*.ipa
-*.dSYM.zip
-*.dSYM/
-
-# General build artifacts
-build/
-dist/
-*.o
-*.obj
-*.a
-*.lib
-*.so
-*.dylib
-*.dll
-*.exe
-
-# Dependencies
+# CocoaPods
 Pods/
-Carthage/
-vendor/bundle/
-node_modules/
-.venv/
-venv/
-__pycache__/
-*.egg-info/
+Podfile.lock
+
+# Swift Package Manager
+.swiftpm/
+
+# Provisioning
+*.mobileprovision
+
+# Temporary files
+*.tmp
+*.temp
+*.log
 
 # Environment
 .env
 .env.local
 .env.*
 
-# Editors
+# IDE
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
 
-# Logs and temp files
-*.log
-*.tmp
-*.temp
-*.DS_Store
+# OS generated files
+.DS_Store
 Thumbs.db
-
-# Coverage
-.coverage
-coverage/
-htmlcov/
-
-# Python
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.so
-.PyInstaller/
 ```
