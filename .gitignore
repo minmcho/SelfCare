@@ -1,37 +1,125 @@
-```
-# iOS/Xcode
-*.xcodeproj/
-*.xcworkspace/
+# Xcode and iOS build artifacts
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
 DerivedData/
+build/
 *.app
 *.ipa
-*.dSYM
-*.lproj/
+*.dSYM/
+*.o
+*.lo
+*.la
+*.dylib
+*.so
+*.a
 
-# Build artifacts
-build/
-*.build/
-Products/
+# Swift Package Manager
+.swiftpm/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Xcode specific
+*.mode1v3
+*.perspectivev3
+*.workspace/
+xcuserdata/
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# Python artifacts (if applicable)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
 
 # Dependencies
-Pods/
-Carthage/
-*.framework
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Logs
 *.log
 
-# Environment
-.env
-.env.local
-*.env.*
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # Temporary files
 *.tmp
+*.temp
+*.bak
+*.backup
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# IDE specific
+.idea/
+.vscode/
 *.swp
 *.swo
 
-# macOS
-.DS_Store
-Thumbs.db
-```
+# Build outputs
+dist/
+target/
+.gradle/
+build/
+*.jar
+*.war
+*.class
+*.obj
+*.out
+*.dll
+*.exe
+
+# MyPy cache
+.mypy_cache/
+__pycache__/
+
+# Pytest cache
+.pytest_cache/
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst

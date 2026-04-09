@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+archiveVersion = 1;
+classes = {
+};
+objectVersion = 56;
+objects = {
+
+/* Begin PBXBuildFile section */
+		24D6C4B0D442430EAB19379C /* VitalPathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6C4B0D442430EAB19379C /* VitalPathApp.swift */; };
+		84E4050F707E4F3B855FA287 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4050F707E4F3B855FA287 /* MessageViewModel.swift */; };
+		5C88A7C49B404D18AFD0F18A /* WearableConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C88A7C49B404D18AFD0F18A /* WearableConnection.swift */; };
+		55EA48AF66F841828E2A52C4 /* WellnessProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA48AF66F841828E2A52C4 /* WellnessProfile.swift */; };
+		7EE03377E66344A9A1DE8111 /* WellnessSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE03377E66344A9A1DE8111 /* WellnessSession.swift */; };
+		7B1B82E6E30945B3BA38E9AB /* GraphQLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1B82E6E30945B3BA38E9AB /* GraphQLClient.swift */; };
+		959202D14CE54D2A8E0BA27F /* SafetyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959202D14CE54D2A8E0BA27F /* SafetyValidator.swift */; };
+		026A6CFFC51A43488C4B2FC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A6CFFC51A43488C4B2FC3 /* ContentView.swift */; };
+		3B128251DB0A4883B4996779 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B128251DB0A4883B4996779 /* ProfileView.swift */; };
+		DB5ED4E0DB88401084B84932 /* VideoAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5ED4E0DB88401084B84932 /* VideoAnalysisView.swift */; };
+		3438DA188A744EAD95CCFC9C /* VideoPlaceholderViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438DA188A744EAD95CCFC9C /* VideoPlaceholderViews.swift */; };
+		66DCAE0495894A6DBB43095B /* TipCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DCAE0495894A6DBB43095B /* TipCardView.swift */; };
+		76C42005AF5244FBAD6B9F4A /* SessionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C42005AF5244FBAD6B9F4A /* SessionCardView.swift */; };
+		3B64CE18FC4547EF88736800 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64CE18FC4547EF88736800 /* MessageBubbleView.swift */; };
+		6CEB5DA23AF141458321F65E /* LanguageSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB5DA23AF141458321F65E /* LanguageSelectorView.swift */; };
+		30BF1DF5EBDF4C04BF2EADE2 /* CrisisSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BF1DF5EBDF4C04BF2EADE2 /* CrisisSupportView.swift */; };
+		9CB7264D05804243BC9B6B66 /* QuickActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7264D05804243BC9B6B66 /* QuickActionButton.swift */; };
+		AB898DE8125E4F42A2F1E394 /* WearableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB898DE8125E4F42A2F1E394 /* WearableRowView.swift */; };
+		7F91645C19AA40508D87D18F /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91645C19AA40508D87D18F /* EmptyStateView.swift */; };
+		D246F5ACEE9E4AD4AE2AD37D /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D246F5ACEE9E4AD4AE2AD37D /* SessionView.swift */; };
+		F3CE193A75C445029F602F5B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE193A75C445029F602F5B /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24D6C4B0D442430EAB19379C /* VitalPathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VitalPathApp.swift"; sourceTree = "<group>"; };
+		84E4050F707E4F3B855FA287 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageViewModel.swift"; sourceTree = "<group>"; };
+		5C88A7C49B404D18AFD0F18A /* WearableConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WearableConnection.swift"; sourceTree = "<group>"; };
+		55EA48AF66F841828E2A52C4 /* WellnessProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WellnessProfile.swift"; sourceTree = "<group>"; };
+		7EE03377E66344A9A1DE8111 /* WellnessSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WellnessSession.swift"; sourceTree = "<group>"; };
+		7B1B82E6E30945B3BA38E9AB /* GraphQLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphQLClient.swift"; sourceTree = "<group>"; };
+		959202D14CE54D2A8E0BA27F /* SafetyValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SafetyValidator.swift"; sourceTree = "<group>"; };
+		026A6CFFC51A43488C4B2FC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView.swift"; sourceTree = "<group>"; };
+		3B128251DB0A4883B4996779 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileView.swift"; sourceTree = "<group>"; };
+		DB5ED4E0DB88401084B84932 /* VideoAnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoAnalysisView.swift"; sourceTree = "<group>"; };
+		3438DA188A744EAD95CCFC9C /* VideoPlaceholderViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPlaceholderViews.swift"; sourceTree = "<group>"; };
+		66DCAE0495894A6DBB43095B /* TipCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TipCardView.swift"; sourceTree = "<group>"; };
+		76C42005AF5244FBAD6B9F4A /* SessionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SessionCardView.swift"; sourceTree = "<group>"; };
+		3B64CE18FC4547EF88736800 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageBubbleView.swift"; sourceTree = "<group>"; };
+		6CEB5DA23AF141458321F65E /* LanguageSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LanguageSelectorView.swift"; sourceTree = "<group>"; };
+		30BF1DF5EBDF4C04BF2EADE2 /* CrisisSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CrisisSupportView.swift"; sourceTree = "<group>"; };
+		9CB7264D05804243BC9B6B66 /* QuickActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuickActionButton.swift"; sourceTree = "<group>"; };
+		AB898DE8125E4F42A2F1E394 /* WearableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WearableRowView.swift"; sourceTree = "<group>"; };
+		7F91645C19AA40508D87D18F /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmptyStateView.swift"; sourceTree = "<group>"; };
+		D246F5ACEE9E4AD4AE2AD37D /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SessionView.swift"; sourceTree = "<group>"; };
+		F3CE193A75C445029F602F5B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView.swift"; sourceTree = "<group>"; };
+		3C4E09D0E8E04A7EA2F51964 /* VitalPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VitalPath.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8470117426864FC393B01FFC = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3BC6EBE345F471B8424C525 = {
+			isa = PBXGroup;
+			children = (
+				24208F154CDC4173A5CEF238 /* ViewModels */,
+				2ACFA9AB521D4A21BEB99665 /* Models */,
+				99C4D2C81078442A9C799C38 /* Services */,
+				B7C7B9B2C299405E87354BA8 /* Views */,
+				60337AAE82D6443DBD4B2792 /* Profile */,
+				7CD9C8AAFCED428DA3E4F7A5 /* Video */,
+				843D2DE51B224459A34F1C71 /* Components */,
+				95EDC98758204CA789204290 /* Session */,
+				4A520EF71B254032B612A360 /* Home */,
+				E7152AA4353D4AD384F098E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24208F154CDC4173A5CEF238 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84E4050F707E4F3B855FA287 /* MessageViewModel.swift */,
+			);
+			path = "";
+			sourceTree = "<group>";
+		};
+		2ACFA9AB521D4A21BEB99665 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C88A7C49B404D18AFD0F18A /* WearableConnection.swift */,
+				55EA48AF66F841828E2A52C4 /* WellnessProfile.swift */,
+				7EE03377E66344A9A1DE8111 /* WellnessSession.swift */,
+			);
+			path = "";
+			sourceTree = "<group>";
+		};
+		99C4D2C81078442A9C799C38 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7B1B82E6E30945B3BA38E9AB /* GraphQLClient.swift */,
+				959202D14CE54D2A8E0BA27F /* SafetyValidator.swift */,
+			);
+			path = "";
+			sourceTree = "<group>";
+		};
+		B7C7B9B2C299405E87354BA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				026A6CFFC51A43488C4B2FC3 /* ContentView.swift */,
+			);
+			path = "";
+			sourceTree = "<group>";
+		};
+		60337AAE82D6443DBD4B2792 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3B128251DB0A4883B4996779 /* ProfileView.swift */,
+			);
+			path = "";
+			sourceTree = "<group>";
+		};
+		7CD9C8AAFCED428DA3E4F7A5 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				DB5ED4E0DB88401084B84932 /* VideoAnalysisView.swift */,
+				3438DA188A744EAD95CCFC9C /* VideoPlaceholderViews.swift */,
+			);
+			path = "";
+			sourceTree = "<group>";
+		};
+		843D2DE51B224459A34F1C71 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				66DCAE0495894A6DBB43095B /* TipCardView.swift */,
+				76C42005AF5244FBAD6B9F4A /* SessionCardView.swift */,
+				3B64CE18FC4547EF88736800 /* MessageBubbleView.swift */,
+				6CEB5DA23AF141458321F65E /* LanguageSelectorView.swift */,
+				30BF1DF5EBDF4C04BF2EADE2 /* CrisisSupportView.swift */,
+				9CB7264D05804243BC9B6B66 /* QuickActionButton.swift */,
+				AB898DE8125E4F42A2F1E394 /* WearableRowView.swift */,
+				7F91645C19AA40508D87D18F /* EmptyStateView.swift */,
+			);
+			path = "";
+			sourceTree = "<group>";
+		};
+		95EDC98758204CA789204290 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				D246F5ACEE9E4AD4AE2AD37D /* SessionView.swift */,
+			);
+			path = "";
+			sourceTree = "<group>";
+		};
+		4A520EF71B254032B612A360 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F3CE193A75C445029F602F5B /* HomeView.swift */,
+			);
+			path = "";
+			sourceTree = "<group>";
+		};
+		E7152AA4353D4AD384F098E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C4E09D0E8E04A7EA2F51964 /* VitalPath.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CAC51CEA8EB48D2ADF68460 /* VitalPath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF43B1EEA544E50ACDF43A2;
+			buildPhases = (
+				20A88727160643F39F4808E7 /* Sources */,
+				8470117426864FC393B01FFC /* Frameworks */,
+				9706EF3A0E1241BF9F2E28EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VitalPath";
+			productName = "VitalPath";
+			productReference = 3C4E09D0E8E04A7EA2F51964 /* VitalPath.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		985C78605C9D43E2B5E32552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3CAC51CEA8EB48D2ADF68460 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 54211B0C5E474B82812AB091;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = B3BC6EBE345F471B8424C525;
+			productRefGroup = E7152AA4353D4AD384F098E6;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (3CAC51CEA8EB48D2ADF68460 /* VitalPath */);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9706EF3A0E1241BF9F2E28EF = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20A88727160643F39F4808E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D6C4B0D442430EAB19379C /* VitalPathApp.swift in Sources */,
+				84E4050F707E4F3B855FA287 /* MessageViewModel.swift in Sources */,
+				5C88A7C49B404D18AFD0F18A /* WearableConnection.swift in Sources */,
+				55EA48AF66F841828E2A52C4 /* WellnessProfile.swift in Sources */,
+				7EE03377E66344A9A1DE8111 /* WellnessSession.swift in Sources */,
+				7B1B82E6E30945B3BA38E9AB /* GraphQLClient.swift in Sources */,
+				959202D14CE54D2A8E0BA27F /* SafetyValidator.swift in Sources */,
+				026A6CFFC51A43488C4B2FC3 /* ContentView.swift in Sources */,
+				3B128251DB0A4883B4996779 /* ProfileView.swift in Sources */,
+				DB5ED4E0DB88401084B84932 /* VideoAnalysisView.swift in Sources */,
+				3438DA188A744EAD95CCFC9C /* VideoPlaceholderViews.swift in Sources */,
+				66DCAE0495894A6DBB43095B /* TipCardView.swift in Sources */,
+				76C42005AF5244FBAD6B9F4A /* SessionCardView.swift in Sources */,
+				3B64CE18FC4547EF88736800 /* MessageBubbleView.swift in Sources */,
+				6CEB5DA23AF141458321F65E /* LanguageSelectorView.swift in Sources */,
+				30BF1DF5EBDF4C04BF2EADE2 /* CrisisSupportView.swift in Sources */,
+				9CB7264D05804243BC9B6B66 /* QuickActionButton.swift in Sources */,
+				AB898DE8125E4F42A2F1E394 /* WearableRowView.swift in Sources */,
+				7F91645C19AA40508D87D18F /* EmptyStateView.swift in Sources */,
+				D246F5ACEE9E4AD4AE2AD37D /* SessionView.swift in Sources */,
+				F3CE193A75C445029F602F5B /* HomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		424440322B7F4A9FBE818FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC22AFE56BA549F8B35D7C68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E331775ECEF4F03937760A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitalpath.ai;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F64565C3E34140E28CD44889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitalpath.ai;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54211B0C5E474B82812AB091 /* Build configuration list for PBXProject "VitalPath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424440322B7F4A9FBE818FEB /* Debug */,
+				CC22AFE56BA549F8B35D7C68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF43B1EEA544E50ACDF43A2 /* Build configuration list for PBXNativeTarget "VitalPath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E331775ECEF4F03937760A1 /* Debug */,
+				F64565C3E34140E28CD44889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+};
+rootObject = 985C78605C9D43E2B5E32552 /* Project object */;
+}
