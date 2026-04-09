@@ -1,44 +1,50 @@
 ```
-# Xcode
-*.xcodeproj/
+# iOS specific
 *.xcworkspace/
-*.pbxuser
-*.mode1v3
-*.perspectivev3
-*.xcuserstate
-*.xccheckout
-*.moved-aside
-*.xcscmblueprint
-
-# iOS Build
-build/
+*.xcodeproj/
+*.xcassets/
 DerivedData/
-
-# CocoaPods
-Pods/
-Podfile.lock
-
-# Swift Package Manager
-.swiftpm/
-
-# Provisioning
-*.mobileprovision
-
-# Temporary files
-*.tmp
-*.temp
-*.log
+build/
+*.app
+*.ipa
+*.dSYM*
+*.lproj/
 
 # Environment
 .env
 .env.local
-.env.*
+*.env.*
 
-# IDE
+# Dependencies
+Pods/
+Carthage/
+.swiftlint.yml
+.swiftpm/
+
+# Build artifacts
+build/
+dist/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.framework
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Editors
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# OS generated files
+# System files
 .DS_Store
 Thumbs.db
 ```
