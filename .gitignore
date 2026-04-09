@@ -1,40 +1,50 @@
 ```
-# Dependencies
-requirements_updated.txt
+# iOS specific
+*.xcworkspace/
+*.xcodeproj/
+*.xcassets/
+DerivedData/
+build/
+*.app
+*.ipa
+*.dSYM*
+*.lproj/
 
 # Environment
 .env
 .env.local
-.env.*
+*.env.*
+
+# Dependencies
+Pods/
+Carthage/
+.swiftlint.yml
+.swiftpm/
+
+# Build artifacts
+build/
+dist/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.framework
 
 # Logs and temp files
 *.log
 *.tmp
+*.swp
+*.swo
 
 # Editors
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.so
-.coverage
-coverage/
-htmlcov/
-.pytest_cache/
-.mypy_cache/
-
-# Build artifacts
-dist/
-build/
-*.egg-info/
-.eggs/
-
-# OS
+# System files
 .DS_Store
 Thumbs.db
 ```
