@@ -2,7 +2,7 @@
 //  HomeView.swift
 //  VitalPath - AI Wellness Coaching Platform
 //
-//  Modern home screen with quick actions and wellness tips
+//  Modern home screen with glass-morphic UI and rich animations
 //
 
 import SwiftUI
@@ -13,10 +13,12 @@ struct HomeView: View {
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \WellnessProfile.updatedAt, order: .reverse) private var profiles: [WellnessProfile]
     
+    @State private var appears = false
+    
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 24) {
                     // Header
                     headerSection
                     
@@ -29,55 +31,104 @@ struct HomeView: View {
                     // Wellness Tips
                     wellnessTipsSection
                 }
-                .padding()
+                .padding(.horizontal)
+                .padding(.top, 8)
+                .padding(.bottom, 20)
             }
-            .background(Color(.systemGroupedBackground))
+            .background(
+                LinearGradient(
+                    gradient: Gradient(colors: [
+                        Color(.systemGroupedBackground),
+                        Color(.systemGroupedBackground).opacity(0.8)
+                    ]),
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+            )
             .navigationTitle(String(localized: "VitalPath"))
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarBackground(.ultraThinMaterial, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     LanguageSelectorView()
                 }
             }
         }
-    }
-    
-    private var headerSection: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(String(localized: "Welcome back"))
-                .font(.title2)
-                .foregroundColor(.secondary)
-            
-            if let profile = profiles.first {
-                Text(profile.name)
-                    .font(.title)
-                    .fontWeight(.bold)
-            } else {
-                Text(String(localized: "Get Started"))
-                    .font(.title)
-                    .fontWeight(.bold)
+        .onAppear {
+            withAnimation(.spring(response: 0.6, dampingFraction: 0.75, blendDuration: 0)) {
+                appears = true
             }
-            
-            // Wellness disclaimer - REQUIRED on every screen
-            HStack(spacing: 8) {
-                Image(systemName: "info.circle.fill")
-                    .foregroundColor(.teal)
-                Text(String(localized: "Wellness support only. Not medical advice."))
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-            }
-            .padding(.vertical, 8)
-            .padding(.horizontal, 12)
-            .background(Color.teal.opacity(0.1))
-            .cornerRadius(8)
         }
     }
     
-    private var quickActionsSection: some View {
+    private var headerSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(String(localized: "Quick Actions"))
-                .font(.headline)
+            Text(String(localized: "Welcome back"))
+                .font(.title3.weight(.medium))
+                .foregroundColor(.secondary)
+                .offset(y: appears ? 0 : -10)
+                .opacity(appears ? 1 : 0)
             
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
+            if let profile = profiles.first {
+                Text(profile.name)
+                    .font(.largeTitle.weight(.bold))
+                    .foregroundStyle(
+                        LinearGradient(
+                            gradient: Gradient(colors: [.teal, .green]),
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    .offset(y: appears ? 0 : -10)
+                    .opacity(appears ? 1 : 0)
+            } else {
+                Text(String(localized: "Get Started"))
+                    .font(.largeTitle.weight(.bold))
+                    .foregroundStyle(
+                        LinearGradient(
+                            gradient: Gradient(colors: [.teal, .green]),
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    .offset(y: appears ? 0 : -10)
+                    .opacity(appears ? 1 : 0)
+            }
+            
+            // Wellness disclaimer - REQUIRED on every screen
+            HStack(spacing: 10) {
+                Image(systemName: "info.circle.fill")
+                    .foregroundColor(.teal)
+                    .font(.body)
+                
+                Text(String(localized: "Wellness support only. Not medical advice."))
+                    .font(.caption.weight(.medium))
+                    .foregroundColor(.secondary)
+            }
+            .padding(.horizontal, 14)
+            .padding(.vertical, 10)
+            .background(
+                Capsule()
+                    .fill(.ultraThinMaterial)
+                    .overlay(
+                        Capsule()
+                            .strokeBorder(Color.teal.opacity(0.2), lineWidth: 1)
+                    )
+            )
+            .shadow(color: .teal.opacity(0.08), radius: 6, x: 0, y: 3)
+            .offset(y: appears ? 0 : -10)
+            .opacity(appears ? 1 : 0)
+        }
+        .animation(.easeInOut(duration: 0.4).delay(0.05), value: appears)
+    }
+    
+    private var quickActionsSection: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Text(String(localized: "Quick Actions"))
+                .font(.headline.weight(.semibold))
+                .foregroundColor(.primary)
+            
+            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
                 QuickActionButton(
                     icon: "message.fill",
                     title: String(localized: "Chat"),
@@ -114,9 +165,9 @@ struct HomeView: View {
     }
     
     private var recentSessionsSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 16) {
             Text(String(localized: "Recent Sessions"))
-                .font(.headline)
+                .font(.headline.weight(.semibold))
             
             if profiles.isEmpty {
                 EmptyStateView(
@@ -133,9 +184,9 @@ struct HomeView: View {
     }
     
     private var wellnessTipsSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 16) {
             Text(String(localized: "Daily Wellness Tip"))
-                .font(.headline)
+                .font(.headline.weight(.semibold))
             
             TipCardView(
                 title: String(localized: "Stay Hydrated"),

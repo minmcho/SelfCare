@@ -1,50 +1,18 @@
 ```
-# iOS specific
-*.xcworkspace/
-*.xcodeproj/
-*.xcassets/
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcshareddata/xcschemes/*.xcscheme
+build/
 DerivedData/
-build/
-*.app
+
+# iOS
 *.ipa
-*.dSYM*
-*.lproj/
+*.dSYM.zip
+*.dSYM/
 
-# Environment
-.env
-.env.local
-*.env.*
-
-# Dependencies
-Pods/
-Carthage/
-.swiftlint.yml
-.swiftpm/
-
-# Build artifacts
-build/
-dist/
-*.o
-*.obj
-*.a
-*.lib
-*.so
-*.dylib
-*.framework
-
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-*.swo
-
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# System files
+# General
 .DS_Store
 Thumbs.db
 ```
