@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  VitalPath - AI Wellness Coaching Platform
 //
-//  Main tab-based navigation with modern iOS UI
+//  Main tab-based navigation with modern glass-morphic UI
 //
 
 import SwiftUI
@@ -35,6 +35,7 @@ struct ContentView: View {
                 }
         }
         .accentColor(.teal)
+        .tint(.teal)
         .sheet(isPresented: $appState.showCrisisModal) {
             CrisisSupportView()
         }
