@@ -1,32 +1,18 @@
 ```
 # Xcode
-build/
-*.xcodeproj/project.xcworkspace/xcuserdata/
 *.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcshareddata/xcschemes/*.xcscheme
+build/
 DerivedData/
 
-# Swift Package Manager
-.swiftpm/
-Package.resolved
+# iOS
+*.ipa
+*.dSYM.zip
+*.dSYM/
 
-# Temporary files
-*.tmp
-*.swp
-*.swo
-
-# Logs
-*.log
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# Editor
-.vscode/
-.idea/
-
-# OS generated files
+# General
 .DS_Store
 Thumbs.db
 ```
